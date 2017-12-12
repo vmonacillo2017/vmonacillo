@@ -23,7 +23,7 @@ if(! isset($_GET['guess'])){
  echo("Please Input Value");
   $_SESSION["counter"] = 0;
 }else if (strlen($_GET['guess'])< 1 ) {
- echo("Your Guess is too short"); 
+ echo("Missing guess parameter"); 
  $_SESSION["counter"]++;
 }else if ( ! is_numeric($_GET['guess'])) {
  echo("Your Guess is not a number");
